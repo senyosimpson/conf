@@ -39,4 +39,5 @@ set tabstop=4
 set smarttab
 set smartindent
 set autoindent
-set backspace=start
+set backspace=start,indent,eol
+set updatetime=100
