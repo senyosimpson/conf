@@ -1,1 +1,2 @@
-# vim-config
+# Vim Configuration File
+Personal configuration file for Vim. 
