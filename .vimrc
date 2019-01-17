@@ -16,6 +16,7 @@ Plugin 'airblade/vim-gitgutter.git'
 Plugin 'itchyny/lightline.vim'
 Plugin 'flazz/vim-colorschemes.git'
 Plugin 'kien/ctrlp.vim'
+Plugin 'mechatroner/rainbow_csv'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -34,6 +35,7 @@ filetype plugin indent on    " required
 
 syntax on
 set number
+set relativenumber
 set shiftwidth=4
 set tabstop=4
 set smarttab
@@ -41,3 +43,9 @@ set smartindent
 set autoindent
 set backspace=start,indent,eol
 set updatetime=100
+
+"make jj do esc"
+inoremap jj <Esc>
+
+"make esc do nothing"
+"inoremap <Esc> <Nop>
