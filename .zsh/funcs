@@ -1,0 +1,14 @@
+set-local-git() {
+	git config --local user.name "SenYeezus"
+	git config --local user.email "simpsonsenyo@gmail.com"
+}
+
+set-local-bitbucket() {
+	git config --local user.name "SenYeezus"
+	git config --local user.email "senyo.simpson@aerobotics.com"
+}
+
+create-jupyter-kernel() {
+	ipython kernel install --username --name="$1"
+}
+
