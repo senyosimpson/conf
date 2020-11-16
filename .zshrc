@@ -1,13 +1,14 @@
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="af-magic"
 
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
+ZSH_DISABLE_COMPFIX=true
+
 plugins=(git z python tmux sudo colorize)
+fpath=(~/.zsh $fpath)
+
 source $ZSH/oh-my-zsh.sh
 
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 
 # Locale
 export LANG=en_US.UTF-8
