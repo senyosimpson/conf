@@ -1,8 +1,10 @@
-alias zshconfig="vim ~/.zshrc"
+alias zshconfig="nvim ~/.zshrc"
+alias zshalias="nvim ~/.zsh/aliases"
+alias zshfuncs="nvim ~/.zsh/funcs"
 alias rs="source ~/.zshrc"
 alias ignore='gi python,macos,visualstudiocode,vim,c,c++,cmake,pycharm >> .gitignore'
 alias envs='cd ~/.envs'
 alias lsenvs='ls ~/.envs'
-alias vimrc='vim ~/.vimrc'
+alias vimrc='nvim ~/.vimrc'
 alias aero='cd ~/Aerobotics'
 alias proj='cd ~/Documents/projects'
