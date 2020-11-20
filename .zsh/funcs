@@ -12,3 +12,7 @@ create-jupyter-kernel() {
 	ipython kernel install --username --name="$1"
 }
 
+actenv() {
+	source ~/.envs/"$1"/bin/activate
+}
+
