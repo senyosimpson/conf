@@ -12,4 +12,4 @@ alias aerojn='cd ~/Aerobotics/aerowork && jupyter lab'
 alias proj='cd ~/Documents/projects'
 alias ipy="ipython3"
 alias lgn="aeroless login --email senyo.simpson@aerobotics.com"
-alias op="nvim ."
+alias o="nvim ."
