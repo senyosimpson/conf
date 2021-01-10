@@ -16,3 +16,6 @@ actenv() {
 	source ~/.envs/"$1"/bin/activate
 }
 
+add-theme() {
+    bash -c "$(wget -qO- https://git.io/vQgMr)"
+}
