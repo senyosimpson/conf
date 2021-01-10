@@ -6,9 +6,12 @@ sudo apt -y install zsh neovim jq curl tmux xclip
 sudo snap install --classic code
 sudo snap install spotify
 
+# Packages needed for choosing terminal themes
+sudo apt-get install dconf-cli uuid-runtime
+
 # Install docker
 sudo apt remove docker docker-engine docker.io containerd runc
-sudo apt install \
+sudo apt -y install \
     apt-transport-https \
     ca-certificates \
     gnupg-agent \
@@ -20,7 +23,7 @@ sudo add-apt-repository \
    $(lsb_release -cs) \
    stable"
 sudo apt update
-sudo apt install docker-ce docker-ce-cli containerd.io
+sudo apt -y install docker-ce docker-ce-cli containerd.io
 
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
