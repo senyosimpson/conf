@@ -2,7 +2,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="af-magic"
 ZSH_DISABLE_COMPFIX=true
 
-plugins=(git z python tmux sudo colorize)
+plugins=(git z python tmux sudo colorize zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
 source $ZSH/oh-my-zsh.sh
 
 
@@ -26,15 +26,6 @@ fi
 if [[ -f ~/.zsh/funcs ]]
 then
 	. ~/.zsh/funcs
-fi
-
-
-if [[ $OSTYPE == "darwin"* ]]; then
-	source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-	source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-	source /usr/local/share/zsh-completions
-elif [[ $OSTYPE == "linux-gnu"* ]]; then 
-	:
 fi
 
 autoload -Uz compinit && compinit
