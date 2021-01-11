@@ -9,6 +9,11 @@ sudo snap install spotify
 # Packages needed for choosing terminal themes
 sudo apt-get install dconf-cli uuid-runtime
 
+# Install Node
+# Remember to update the node version periodically
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt install nodejs
+
 # Install docker
 sudo apt remove docker docker-engine docker.io containerd runc
 sudo apt -y install \
