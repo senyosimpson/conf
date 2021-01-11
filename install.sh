@@ -49,6 +49,12 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 # Change default shell to zsh
 chsh -s /usr/bin/zsh
 
+# Create a .envs file for Python environments
+if [ ! -d ~/.envs ]
+then
+    mkdir ~/.envs
+fi
+
 # Links all the dotfiles to the relevant locations in the filesystem
 # so that updates can be made just to the dotfiles.
 
