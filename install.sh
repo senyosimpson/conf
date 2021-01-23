@@ -2,9 +2,14 @@
 
 # Install common software
 sudo apt update
-sudo apt -y install zsh neovim jq curl tmux xclip
+sudo apt -y install zsh jq curl tmux xclip
 sudo snap install --classic code
 sudo snap install spotify
+
+# Install neovim
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt update
+sudo apt install neovim
 
 # Packages needed for choosing terminal themes
 sudo apt-get install dconf-cli uuid-runtime
