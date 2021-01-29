@@ -84,5 +84,10 @@ then
     mkdir ~/.zsh
 fi
 
+if [ ! -f ~/.zsh/envars ]
+then
+    touch ~/.zsh/envars
+fi
+
 ln -sfnv ~/dotfiles/.zsh/aliases ~/.zsh/aliases
 ln -sfnv ~/dotfiles/.zsh/funcs ~/.zsh/funcs
