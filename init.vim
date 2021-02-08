@@ -24,6 +24,7 @@ let g:lightline = {
 
 let g:coc_global_extensions = [
     \ 'coc-python',
+    \ 'coc-rust-analyzer',
     \ ]
 
 " Vim config
