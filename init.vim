@@ -10,7 +10,6 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
-Plug 'airblade/vim-gitgutter'
 
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
