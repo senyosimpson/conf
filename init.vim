@@ -2,8 +2,12 @@ call plug#begin('~/.config/nvim')
 
 Plug 'itchyny/lightline.vim'
 Plug 'drewtempelmeyer/palenight.vim'
+Plug 'joshdick/onedark.vim'
+Plug 'sainnhe/sonokai'
+Plug 'ghifarit53/tokyonight-vim'
 
 Plug 'sheerun/vim-polyglot'
+Plug 'airblade/vim-gitgutter'
 
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
@@ -41,11 +45,6 @@ set tabstop=4
 inoremap jj <Esc>
 nnoremap <silent> <C-f> :Files<CR>
 
-" Theme settings
-syntax enable
-set background=dark
-colorscheme palenight
-
 if (has("nvim"))
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 endif
@@ -53,3 +52,9 @@ endif
 if (has("termguicolors"))
   set termguicolors
 endif
+
+" Theme settings
+syntax enable
+" set background=dark
+colorscheme sonokai
+let g:sonokai_style = 'andromeda'
