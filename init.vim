@@ -4,13 +4,11 @@ Plug 'itchyny/lightline.vim'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sainnhe/sonokai'
-Plug 'ghifarit53/tokyonight-vim'
 
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'psf/black', { 'branch': 'stable' }
 Plug 'sheerun/vim-polyglot'
 Plug 'airblade/vim-gitgutter'
 
@@ -27,8 +25,9 @@ let g:lightline = {
     \ }
 
 let g:coc_global_extensions = [
-    \ 'coc-python',
+    \ 'coc-pyright',
     \ 'coc-rust-analyzer',
+    \ 'coc-json',
     \ ]
 
 " Vim config

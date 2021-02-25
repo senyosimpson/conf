@@ -75,6 +75,7 @@ then
     mkdir -p ~/.config/nvim
 fi
 
+ln -sfnv ~/dotfiles/coc-settings.json ~/.config/nvim/coc-settings.json
 ln -sfnv ~/dotfiles/init.vim ~/.config/nvim/init.vim
 ln -sfnv ~/dotfiles/.vimrc ~/.vimrc
 ln -sfnv ~/dotfiles/.zshrc ~/.zshrc

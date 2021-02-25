@@ -1,0 +1,13 @@
+{
+    "coc.preferences.formatOnType": true,
+    "python.pythonPath": "python3",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportGeneralTypeIssues": "warning",
+        "reportUnusedImport": "warning"
+    },
+    "python.linting.pylintEnabled": true,
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyCategorySeverity.error": "Information",
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": ["--line-length", "120"]
+}
