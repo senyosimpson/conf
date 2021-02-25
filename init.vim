@@ -26,6 +26,7 @@ let g:lightline = {
 
 let g:coc_global_extensions = [
     \ 'coc-pyright',
+    \ 'coc-git',
     \ 'coc-rust-analyzer',
     \ 'coc-json',
     \ ]
