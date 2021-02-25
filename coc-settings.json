@@ -1,10 +1,11 @@
 {
     "coc.preferences.formatOnType": true,
-    "python.pythonPath": "python3",
     "python.analysis.diagnosticSeverityOverrides": {
         "reportGeneralTypeIssues": "warning",
         "reportUnusedImport": "warning"
     },
+    "python.venvPath": "/media/senyo/senYeezus/envs",
+    "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
     "python.linting.mypyEnabled": true,
     "python.linting.mypyCategorySeverity.error": "Information",
