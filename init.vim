@@ -6,13 +6,13 @@ Plug 'joshdick/onedark.vim'
 Plug 'sainnhe/sonokai'
 Plug 'ghifarit53/tokyonight-vim'
 
-Plug 'sheerun/vim-polyglot'
-Plug 'airblade/vim-gitgutter'
-
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'psf/black', { 'branch': 'stable' }
+Plug 'sheerun/vim-polyglot'
+Plug 'airblade/vim-gitgutter'
 
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
@@ -40,6 +40,11 @@ set noshowmode
 set relativenumber
 set shiftwidth=4
 set tabstop=4
+set updatetime=100
+
+" Auto commands
+" autocmd BufWritePre *.py execute ':Black'
+autocmd BufReadPre *.py :set foldmethod=indent
 
 " Custom mappings
 inoremap jj <Esc>
