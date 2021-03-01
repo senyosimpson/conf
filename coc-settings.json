@@ -1,5 +1,11 @@
 {
     "coc.preferences.formatOnType": true,
+    "coc.preferences.formatOnSaveFiletypes": [
+        "python",
+        "markdown",
+        "json",
+        "jsonc"
+    ],
     "python.analysis.diagnosticSeverityOverrides": {
         "reportGeneralTypeIssues": "warning",
         "reportUnusedImport": "warning"
@@ -10,7 +16,10 @@
     "python.linting.mypyEnabled": true,
     "python.linting.mypyCategorySeverity.error": "Information",
     "python.formatting.provider": "black",
-    "python.formatting.blackArgs": ["--line-length", "120"],
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "120"
+    ],
     "git.addGBlameToVirtualText": true,
     "rust-analyzer.enable": true,
     "rust-analyzer.inlayHints.typeHintsSeparator": ":",
