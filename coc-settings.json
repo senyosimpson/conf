@@ -11,5 +11,15 @@
     "python.linting.mypyCategorySeverity.error": "Information",
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": ["--line-length", "120"],
-    "git.addGBlameToVirtualText": true
+    "git.addGBlameToVirtualText": true,
+    "rust-analyzer.enable": true,
+    "rust-analyzer.inlayHints.typeHintsSeparator": ":",
+    "rust-analyzer.inlayHints.chainingHintsSeparator": ":",
+    "markdownlint.config": {
+        "MD013": {
+            "line_length": 100
+        },
+        "MD034": false,
+        "MD040": false
+    }
 }
