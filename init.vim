@@ -49,6 +49,8 @@ autocmd BufReadPre *.py :set foldmethod=indent
 " Custom mappings
 inoremap jj <Esc>
 nnoremap <silent> <C-f> :Files<CR>
+" This unsets the last searched pattern register by hitting return
+nnoremap <silent> <CR> :noh<CR><CR>
 
 if (has("nvim"))
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
