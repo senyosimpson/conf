@@ -19,6 +19,12 @@ sudo apt-get install dconf-cli uuid-runtime
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt install nodejs
 
+# Install Babashka
+curl -L -o bbinstall https://raw.githubusercontent.com/babashka/babashka/master/install
+chmod +x bbinstall
+./bbinstall
+rm bbinstall
+
 # Install docker
 sudo apt remove docker docker-engine docker.io containerd runc
 sudo apt -y install \
