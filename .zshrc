@@ -2,7 +2,17 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="af-magic"
 ZSH_DISABLE_COMPFIX=true
 
-plugins=(git z python tmux sudo colorize zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
+plugins=(
+    z
+    git
+    sudo
+    tmux
+    python
+    colorize
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    zsh-completions
+)
 source $ZSH/oh-my-zsh.sh
 
 
@@ -28,4 +38,5 @@ then
 	. ~/.zsh/funcs
 fi
 
-autoload -Uz compinit && compinit
+autoload -Uz compinit
+compinit
