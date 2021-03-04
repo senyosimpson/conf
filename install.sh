@@ -22,7 +22,7 @@ sudo apt install nodejs
 # Install Babashka
 curl -L -o bbinstall https://raw.githubusercontent.com/babashka/babashka/master/install
 chmod +x bbinstall
-./bbinstall
+sudo ./bbinstall
 rm bbinstall
 
 # Install docker
