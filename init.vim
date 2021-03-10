@@ -43,8 +43,8 @@ set tabstop=4
 set updatetime=100
 
 " Auto commands
-" autocmd BufWritePre *.py execute ':Black'
 autocmd BufReadPre *.py :set foldmethod=indent
+autocmd InsertLeave * :w
 
 " Custom mappings
 inoremap jj <Esc>
