@@ -51,6 +51,7 @@ inoremap jj <Esc>
 nnoremap <silent> <C-f> :Files<CR>
 " This unsets the last searched pattern register by hitting return
 nnoremap <silent> <CR> :noh<CR><CR>
+tnoremap <C-e> <C-\><C-n>
 
 if (has("nvim"))
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
