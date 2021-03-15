@@ -5,8 +5,9 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sainnhe/sonokai'
 
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/rainbow_parentheses.vim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
@@ -29,6 +30,7 @@ let g:coc_global_extensions = [
     \ 'coc-rust-analyzer',
     \ 'coc-json',
     \ 'coc-markdownlint',
+    \ 'coc-elixir',
     \ ]
 
 " Vim config
@@ -45,6 +47,7 @@ set updatetime=100
 " Auto commands
 autocmd BufReadPre *.py :set foldmethod=indent
 autocmd InsertLeave * :w
+autocmd VimEnter * :RainbowParentheses
 
 " Custom mappings
 inoremap jj <Esc>
