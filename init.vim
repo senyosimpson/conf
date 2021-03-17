@@ -45,6 +45,8 @@ set tabstop=4
 set updatetime=100
 set cmdheight=2
 set signcolumn=yes
+set nobackup
+set writebackup
 
 " Auto commands
 autocmd BufReadPre *.py :set foldmethod=indent
@@ -65,6 +67,9 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
+" Jump further on up and down keys
+nnoremap <silent> <Up> 5k
+nnoremap <silent> <Down> 5j
 
 
 " Use tab for trigger completion with characters ahead and navigate.
