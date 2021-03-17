@@ -47,6 +47,7 @@ set cmdheight=2
 set signcolumn=yes
 set nobackup
 set writebackup
+set spelllang=en_gb
 
 " Auto commands
 autocmd BufReadPre *.py :set foldmethod=indent
