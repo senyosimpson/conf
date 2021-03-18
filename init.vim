@@ -45,6 +45,7 @@ set tabstop=4
 set updatetime=100
 set cmdheight=2
 set signcolumn=yes
+set mouse=a
 set nobackup
 set writebackup
 set spelllang=en_gb
