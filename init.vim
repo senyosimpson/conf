@@ -96,3 +96,17 @@ syntax enable
 " set background=dark
 colorscheme sonokai
 let g:sonokai_style = 'andromeda'
+
+" Setting up Python for Neovim. This is in order to ensure that the Python
+" used by Neovim always has some standard tools in it such as Black
+" Instructions from the guide: https://neovim.io/doc/user/provider.html
+"
+" pyenv install 3.4.4
+" pyenv virtualenv 3.4.4 py3nvim
+" pyenv activate py3nvim
+" pip install pynvim black pylint
+" pyenv which python  # Note the path
+"
+" The last command reports the interpreter path, add it to your init.vim:
+let g:python3_host_prog = '/Users/senyosimpson/.pyenv/versions/py3nvim/bin/python'
+
