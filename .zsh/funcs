@@ -1,10 +1,15 @@
-set-local-git() {
+set-personal-git() {
 	git config --local user.name "SenYeezus"
 	git config --local user.email "simpsonsenyo@gmail.com"
 }
 
-set-local-bitbucket() {
-	git config --local user.name "SenYeezus"
+set-work-git() {
+	git config --local user.name "Senyo Simpson"
+	git config --local user.email "senyo.simpson@aerobotics.com"
+}
+
+set-work-bitbucket() {
+	git config --local user.name "Senyo Simpson"
 	git config --local user.email "senyo.simpson@aerobotics.com"
 }
 
