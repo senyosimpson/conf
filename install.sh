@@ -2,9 +2,9 @@
 
 # Install common software
 sudo apt update
-sudo apt -y install zsh jq curl tmux xclip
-sudo snap install --classic code
-sudo snap install spotify
+sudo apt -y install git zsh jq curl tmux xclip
+#sudo snap install --classic code
+#sudo snap install spotify
 
 # Install neovim
 sudo add-apt-repository ppa:neovim-ppa/stable
@@ -40,6 +40,16 @@ sudo add-apt-repository \
    stable"
 sudo apt update
 sudo apt -y install docker-ce docker-ce-cli containerd.io
+
+# Install Python build dependencies and Pyenv
+sudo apt install --no-install-recommends \
+    make build-essential libssl-dev zlib1g-dev \
+    libbz2-dev libreadline-dev libsqlite3-dev \
+    wget curl llvm libncurses5-dev xz-utils \
+    tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+
 
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
