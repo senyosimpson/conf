@@ -27,15 +27,15 @@ then
 fi
 
 # Load environment variables
-if [[ -f ~/.zsh/envars ]]
+if [[ -f ~/.zsh/env ]]
 then
-	. ~/.zsh/envars
+	. ~/.zsh/env
 fi
 
 # Load functions
-if [[ -f ~/.zsh/funcs ]]
+if [[ -f ~/.zsh/functions ]]
 then
-	. ~/.zsh/funcs
+	. ~/.zsh/functions
 fi
 
 autoload -Uz compinit
