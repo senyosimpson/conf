@@ -23,9 +23,6 @@ chmod +x bbinstall
 sudo ./bbinstall
 rm bbinstall
 
-# Install Hugo
-sudo apt -y install hugo
-
 # Install docker
 sudo apt remove docker docker-engine docker.io containerd runc
 sudo apt -y install \
