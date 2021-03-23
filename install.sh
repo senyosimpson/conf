@@ -1,29 +1,30 @@
-# TODO: Check which OS type you are working with
-
 # Install common software
 sudo apt update
 sudo apt -y install git zsh jq curl tmux xclip
-#sudo snap install --classic code
-#sudo snap install spotify
+sudo snap install --classic code
+sudo snap install spotify
 
 # Install neovim
 sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt update
-sudo apt install neovim
+sudo apt -y install neovim
 
 # Packages needed for choosing terminal themes
-sudo apt-get install dconf-cli uuid-runtime
+sudo apt -y install dconf-cli uuid-runtime
 
 # Install Node
 # Remember to update the node version periodically
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-sudo apt install nodejs
+sudo apt -y install nodejs
 
 # Install Babashka
 curl -L -o bbinstall https://raw.githubusercontent.com/babashka/babashka/master/install
 chmod +x bbinstall
 sudo ./bbinstall
 rm bbinstall
+
+# Install Hugo
+sudo apt -y install hugo
 
 # Install docker
 sudo apt remove docker docker-engine docker.io containerd runc
@@ -42,7 +43,7 @@ sudo apt update
 sudo apt -y install docker-ce docker-ce-cli containerd.io
 
 # Install Python build dependencies and Pyenv
-sudo apt install --no-install-recommends \
+sudo apt -y install --no-install-recommends \
     make build-essential libssl-dev zlib1g-dev \
     libbz2-dev libreadline-dev libsqlite3-dev \
     wget curl llvm libncurses5-dev xz-utils \
