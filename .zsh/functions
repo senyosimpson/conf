@@ -8,11 +8,6 @@ set-work-git() {
 	git config --local user.email "senyo.simpson@aerobotics.com"
 }
 
-set-work-bitbucket() {
-	git config --local user.name "Senyo Simpson"
-	git config --local user.email "senyo.simpson@aerobotics.com"
-}
-
 create-jupyter-kernel() {
 	ipython kernel install --username --name="$1"
 }
@@ -24,7 +19,16 @@ actenv() {
 create-env() {
     pyenv virtualenv $1 $2
     pyenv activate $2
-    pip3 install black pylint mypy wheel
+    pip3 install \
+      black \
+      pylint \
+      mypy \
+      wheel \
+      mkdocs \
+      mkdocs-material \
+      pygments \
+      jupyterlab \
+      ipython
 }
 
 add-theme() {
