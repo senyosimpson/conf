@@ -21,6 +21,12 @@ actenv() {
 	source ~/.envs/"$1"/bin/activate
 }
 
+create-env() {
+    pyenv virtualenv $1 $2
+    pyenv activate $2
+    pip3 install black pylint mypy wheel
+}
+
 add-theme() {
     bash -c "$(wget -qO- https://git.io/vQgMr)"
 }

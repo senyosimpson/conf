@@ -1,15 +1,25 @@
+# Shortcuts to configs
+alias vimrc='nvim ~/.vimrc'
 alias zshconfig="nvim ~/.zshrc"
-alias zshalias="nvim ~/.zsh/aliases"
 alias zshfuncs="nvim ~/.zsh/funcs"
+alias zshalias="nvim ~/.zsh/aliases"
 alias nvimrc="nvim ~/.config/nvim/init.vim"
+
+# Python related
+alias ipy="ipython3"
+alias lsenvs='pyenv virtualenvs'
+
+# Shortcuts to directories
+alias cas='cd ~/Casette'
+alias proj='cd ~/Projects'
+alias aero='cd ~/Aerobotics'
+
+# Aerobotics
+alias aerojn='cd ~/Aerobotics/aerowork && jupyter lab'
+alias lgn="aeroless login --email senyo.simpson@aerobotics.com"
+
+# General
 alias rs="source ~/.zshrc"
 alias ignore='gi python,macos,visualstudiocode,vim,c,c++,cmake,pycharm >> .gitignore'
-alias envs='cd ~/.envs'
-alias lsenvs='ls ~/.envs'
-alias vimrc='nvim ~/.vimrc'
-alias aero='cd ~/Aerobotics'
-alias aerojn='cd ~/Aerobotics/aerowork && jupyter lab'
-alias proj='cd ~/Documents/projects'
-alias ipy="ipython3"
-alias lgn="aeroless login --email senyo.simpson@aerobotics.com"
 alias o="nvim ."
+alias arg="alias | rg"
