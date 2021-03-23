@@ -1,7 +1,7 @@
 # Shortcuts to configs
 alias vimrc='nvim ~/.vimrc'
 alias zshconfig="nvim ~/.zshrc"
-alias zshfuncs="nvim ~/.zsh/funcs"
+alias zshfuncs="nvim ~/.zsh/functions"
 alias zshalias="nvim ~/.zsh/aliases"
 alias nvimrc="nvim ~/.config/nvim/init.vim"
 
@@ -13,6 +13,7 @@ alias lsenvs='pyenv virtualenvs'
 alias cas='cd ~/Casette'
 alias proj='cd ~/Projects'
 alias aero='cd ~/Aerobotics'
+alias dots='cd ~/dotfiles'
 
 # Aerobotics
 alias aerojn='cd ~/Aerobotics/aerowork && jupyter lab'
