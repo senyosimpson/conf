@@ -12,6 +12,9 @@ env:
   # available, otherwise `xterm-256color` is used.
   TERM: alacritty
 
+# Background opacity
+background_opacity: 0.9
+
 # Window dimensions
 # -----------------
 # Changes require restart
