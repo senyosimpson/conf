@@ -9,8 +9,8 @@ sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt update
 sudo apt -y install neovim
 
-# Install Postgresql client
-sudo apt -y install postgresql-client
+# Install Postgresql 
+sudo apt -y install postgresql
 
 # Packages needed for choosing terminal themes
 sudo apt -y install dconf-cli uuid-runtime
