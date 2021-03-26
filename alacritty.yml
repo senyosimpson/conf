@@ -13,30 +13,37 @@ env:
   TERM: alacritty
   LANG: "en_US.UTF-8"
   LC_CTYPE: en_US.UTF-8
-  #window:
-  # Window dimensions (changes require restart)
-  #
+
+  # Window dimensions
+  # -----------------
+  # Changes require restart
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
-  #dimensions:
-  #  columns: 0
-  #  lines: 0
-  # Window position (changes require restart)
-  #
+  dimensions:
+    columns: 80
+    lines: 24
+
+  # Window position
+  # ---------------
+  # Changes require restart
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
   #position:
   #  x: 0
   #  y: 0
-  # Window padding (changes require restart)
-  #
+
+  # Window padding
+  # --------------
+  # Changes require restart
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   #padding:
   #  x: 0
   #  y: 0
+
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
+
   # Window decorations
   #
   # Values for `decorations`:
@@ -56,10 +63,15 @@ env:
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
+
   #startup_mode: Windowed
+
   # Window title
+  # ------------
   #title: Alacritty
-  # Window class (Linux/BSD only):
+
+  # Window class (Linux/BSD only)
+  # ------------------------------
   #class:
   # Application instance name
   #instance: Alacritty
@@ -82,38 +94,28 @@ env:
 font:
   # Normal (roman) font face
   normal:
-    # Font family
-    #
-    # Default:
-    #   - (macOS) Menlo
-    #   - (Linux/BSD) monospace
-    #   - (Windows) Consolas
     family: "fira code"
-
     # The `style` can be specified to pick a specific face.
     style: Regular
-    # Bold font face
-    #bold:
-    # Font family
-    #
+
+  # Bold font face
+  #bold:
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
     #family: monospace
     # The `style` can be specified to pick a specific face.
     #style: Bold
-    # Italic font face
-    #italic:
-    # Font family
-    #
+
+  # Italic font face
+  #italic:
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
     #family: monospace
     # The `style` can be specified to pick a specific face.
     #style: Italic
-    # Bold italic font face
-    #bold_italic:
-    # Font family
-    #
+
+  # Bold italic font face
+  #bold_italic:
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
     #family: monospace
@@ -128,12 +130,14 @@ font:
   #offset:
   #  x: 0
   #  y: 0
+
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
   # increasing `y` moves the glyph upwards.
   #glyph_offset:
   #  x: 0
   #  y: 0
+
   # Thin stroke font rendering (macOS only)
   #
   # Thin strokes are suitable for retina displays, but for non-retina screens
@@ -151,8 +155,8 @@ font:
   use_thin_strokes: true
 
 # If `true`, bold text is drawn using the bright color variants.
-#draw_bold_text_with_bright_colors: false
-# Colors (Tomorrow Night Bright)
+draw_bold_text_with_bright_colors: true
+
 colors:
   # Default colors
   primary:
