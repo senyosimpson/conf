@@ -6,6 +6,7 @@ alias zshalias="nvim ~/.zsh/aliases"
 alias nvimrc="nvim ~/.config/nvim/init.vim"
 
 # Python related
+alias py="python"
 alias ipy="ipython3"
 alias lsenvs='pyenv virtualenvs'
 
@@ -14,10 +15,11 @@ alias cas='cd ~/Casette'
 alias proj='cd ~/Projects'
 alias aero='cd ~/Aerobotics'
 alias dots='cd ~/dotfiles'
+alias oss='cd ~/OSS'
 
 # Aerobotics
 alias aerojn='cd ~/Aerobotics/aerowork && jupyter lab'
-alias lgn="aeroless login --email senyo.simpson@aerobotics.com"
+alias lgn="aeroless auth login --email senyo.simpson@aerobotics.com"
 
 # General
 alias rs="source ~/.zshrc"
