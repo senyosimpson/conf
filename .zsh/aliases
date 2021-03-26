@@ -4,6 +4,8 @@ alias zshconfig="nvim ~/.zshrc"
 alias zshfuncs="nvim ~/.zsh/functions"
 alias zshalias="nvim ~/.zsh/aliases"
 alias nvimrc="nvim ~/.config/nvim/init.vim"
+alias coc="nvim ~/.config/nvim/coc-settings.json"
+alias crit="nvim ~/.config/alacritty/alacritty.yml"
 
 # Python related
 alias py="python"
@@ -21,8 +23,13 @@ alias oss='cd ~/OSS'
 alias aerojn='cd ~/Aerobotics/aerowork && jupyter lab'
 alias lgn="aeroless auth login --email senyo.simpson@aerobotics.com"
 
+# Postgres
+alias pgstart="sudo service postgresql start"
+alias pgstop="sudo service postgresql stop"
+
 # General
 alias rs="source ~/.zshrc"
 alias ignore='gi python,macos,visualstudiocode,vim,c,c++,cmake,pycharm >> .gitignore'
 alias o="nvim ."
 alias arg="alias | rg"
+alias at="alacritty-themes"
