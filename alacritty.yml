@@ -11,84 +11,87 @@ env:
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
   TERM: alacritty
-  LANG: "en_US.UTF-8"
-  LC_CTYPE: en_US.UTF-8
 
-  # Window dimensions
-  # -----------------
-  # Changes require restart
-  # Specified in number of columns/lines, not pixels.
-  # If both are `0`, this setting is ignored.
-  dimensions:
-    columns: 80
-    lines: 24
+# Window dimensions
+# -----------------
+# Changes require restart
+#
+# Specified in number of columns/lines, not pixels.
+# If both are `0`, this setting is ignored.
+dimensions:
+  columns: 80
+  lines: 24
 
-  # Window position
-  # ---------------
-  # Changes require restart
-  # Specified in number of pixels.
-  # If the position is not set, the window manager will handle the placement.
-  #position:
-  #  x: 0
-  #  y: 0
+# Window position
+# ---------------
+# Changes require restart
+#
+# Specified in number of pixels.
+# If the position is not set, the window manager will handle the placement.
+# position:
+#   x: 0
+#   y: 0
 
-  # Window padding
-  # --------------
-  # Changes require restart
-  # Blank space added around the window in pixels. This padding is scaled
-  # by DPI and the specified value is always added at both opposing sides.
-  #padding:
-  #  x: 0
-  #  y: 0
+# Window padding
+# --------------
+# Changes require restart
+#
+# Blank space added around the window in pixels. This padding is scaled
+# by DPI and the specified value is always added at both opposing sides.
+# padding:
+#   x: 0
+#   y: 0
 
-  # Spread additional padding evenly around the terminal content.
-  #dynamic_padding: false
+# Spread additional padding evenly around the terminal content.
+#dynamic_padding: false
 
-  # Window decorations
-  #
-  # Values for `decorations`:
-  #     - full: Borders and title bar
-  #     - none: Neither borders nor title bar
-  #
-  # Values for `decorations` (macOS only):
-  #     - transparent: Title bar, transparent background and title bar buttons
-  #     - buttonless: Title bar, transparent background, but no title bar buttons
-  #decorations: full
-  # Startup Mode (changes require restart)
-  #
-  # Values for `startup_mode`:
-  #   - Windowed
-  #   - Maximized
-  #   - Fullscreen
-  #
-  # Values for `startup_mode` (macOS only):
-  #   - SimpleFullscreen
+# Window decorations
+#
+# Values for `decorations`:
+#     - full: Borders and title bar
+#     - none: Neither borders nor title bar
+#
+# Values for `decorations` (macOS only):
+#     - transparent: Title bar, transparent background and title bar buttons
+#     - buttonless: Title bar, transparent background, but no title bar buttons
+decorations: none
 
-  #startup_mode: Windowed
+# Startup Mode (changes require restart)
+#
+# Values for `startup_mode`:
+#   - Windowed
+#   - Maximized
+#   - Fullscreen
+# Values for `startup_mode` (macOS only):
+#   - SimpleFullscreen
 
-  # Window title
-  # ------------
-  #title: Alacritty
+startup_mode: Windowed
 
-  # Window class (Linux/BSD only)
-  # ------------------------------
-  #class:
-  # Application instance name
-  #instance: Alacritty
-  # General application class
-  #general: Alacritty
-  # GTK theme variant (Linux/BSD only)
-  #
-  # Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
-  # Set this to `None` to use the default theme variant.
-  #gtk_theme_variant: None
-  #scrolling:
-  # Maximum number of lines in the scrollback buffer.
-  # Specifying '0' will disable scrolling.
-  #history: 10000
-  # Number of lines the viewport will move for every line scrolled when
-  # scrollback is enabled (history > 0).
-  #multiplier: 3
+# Window title
+# ------------
+#title: Alacritty
+
+# Window class (Linux/BSD only)
+# ------------------------------
+#class:
+# Application instance name
+#instance: Alacritty
+# General application class
+#general: Alacritty
+
+# GTK theme variant (Linux/BSD only)
+#
+# Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
+# Set this to `None` to use the default theme variant.
+#gtk_theme_variant: None
+
+#scrolling:
+# Maximum number of lines in the scrollback buffer.
+# Specifying '0' will disable scrolling.
+#history: 10000
+# Number of lines the viewport will move for every line scrolled when
+# scrollback is enabled (history > 0).
+#multiplier: 3
 
 # Font configuration
 font:
