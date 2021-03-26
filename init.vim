@@ -61,7 +61,11 @@ inoremap jj <Esc>
 nnoremap <silent> <C-f> :Files<CR>
 " This unsets the last searched pattern register by hitting return
 nnoremap <silent> <CR> :noh<CR><CR>
+" Go back to normal mode in the terminal
 tnoremap <C-e> <C-\><C-n>
+" Toggle file explorer in normal and insert mode
+nnoremap <C-e> :Lexplore<CR>
+inoremap <C-e> :Lexplore<CR>
 " GoTo code definitions using CoC
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
@@ -93,9 +97,26 @@ endif
 
 " Theme settings
 syntax enable
-" set background=dark
 colorscheme sonokai
 let g:sonokai_style = 'andromeda'
+
+" Netrw config
+" This just chooses the symbol used when listing directories
+let g:netrw_liststyle = 3
+" This removes the banner at the top with commands on how to use netrw
+let g:netrw_banner = 0
+" Makes the v key open the window vertically with the new window and cursor
+" to the right
+let g:netrw_altv=1
+" Decides how files are opened
+" 1 - open files in a new horizontal split
+" 2 - open files in a new vertical split
+" 3 - open files in a new tab
+" 4 - open in previous window 
+let g:netrw_browse_split = 3
+" Percentage of the window size to dedicate to netrw when opened
+" in another tab
+let g:netrw_winsize = 20
 
 " Setting up Python for Neovim. This is in order to ensure that the Python
 " used by Neovim always has some standard tools in it such as Black
@@ -108,5 +129,5 @@ let g:sonokai_style = 'andromeda'
 " pyenv which python  # Note the path
 "
 " The last command reports the interpreter path, add it to your init.vim:
-let g:python3_host_prog = '/Users/senyosimpson/.pyenv/versions/py3nvim/bin/python'
+let g:python3_host_prog = '/home/senyeezus/.pyenv/versions/py3nvim/bin/python'
 
