@@ -1,6 +1,6 @@
 # Install common software
 sudo apt update
-sudo apt -y install git zsh jq curl tmux xclip font-manager fonts-firacode
+sudo apt -y install git zsh jq curl tmux caffeine xclip font-manager fonts-firacode
 sudo snap install --classic code
 sudo snap install spotify
 

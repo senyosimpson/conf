@@ -28,7 +28,8 @@ create-env() {
       mkdocs-material \
       pygments \
       jupyterlab \
-      ipython
+      ipython \
+      python-dotenv
 }
 
 add-theme() {
