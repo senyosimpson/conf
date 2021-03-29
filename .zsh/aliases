@@ -11,6 +11,7 @@ alias crit="nvim ~/.config/alacritty/alacritty.yml"
 alias py="python"
 alias ipy="ipython3"
 alias lsenvs='pyenv virtualenvs'
+alias frg="pip freeze | rg"
 
 # Shortcuts to directories
 alias cas='cd ~/Casette'
