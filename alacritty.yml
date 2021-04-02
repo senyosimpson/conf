@@ -100,7 +100,7 @@ startup_mode: Windowed
 font:
   # Normal (roman) font face
   normal:
-    family: "fira code"
+    family: Fira Code
     # The `style` can be specified to pick a specific face.
     style: Regular
 

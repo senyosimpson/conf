@@ -29,7 +29,9 @@ create-env() {
       pygments \
       jupyterlab \
       ipython \
-      python-dotenv
+      python-dotenv \
+      structlog \
+      python-json-logger
 }
 
 add-theme() {

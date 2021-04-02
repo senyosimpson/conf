@@ -10,8 +10,10 @@ alias crit="nvim ~/.config/alacritty/alacritty.yml"
 # Python related
 alias py="python"
 alias ipy="ipython3"
-alias lsenvs='pyenv virtualenvs'
+alias lsenvs="pyenv virtualenvs"
+alias wpy="pyenv which python"
 alias frg="pip freeze | rg"
+alias ireq="pip install -r requirements.txt"
 
 # Shortcuts to directories
 alias cas='cd ~/Casette'
@@ -19,6 +21,7 @@ alias proj='cd ~/Projects'
 alias aero='cd ~/Aerobotics'
 alias dots='cd ~/dotfiles'
 alias oss='cd ~/OSS'
+alias mas='cd ~/Masters'
 
 # Aerobotics
 alias aerojn='cd ~/Aerobotics/aerowork && jupyter lab'
@@ -32,5 +35,9 @@ alias pgstop="sudo service postgresql stop"
 alias rs="source ~/.zshrc"
 alias ignore='gi python,macos,visualstudiocode,vim,c,c++,cmake,pycharm >> .gitignore'
 alias o="nvim ."
-alias arg="alias | rg"
 alias at="alacritty-themes"
+
+# Ripgrep
+alias arg="alias | rg"
+alias lrg="l | rg"
+alias erg="env | rg"
