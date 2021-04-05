@@ -58,6 +58,7 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Custom mappings
 inoremap jj <Esc>
+nnoremap 9 $
 nnoremap <silent> <C-f> :Files<CR>
 " This unsets the last searched pattern register by hitting return
 nnoremap <silent> <CR> :noh<CR><CR>
@@ -76,6 +77,8 @@ nnoremap <silent> K :call <SID>show_documentation()<CR>
 " Jump further on up and down keys
 nnoremap <silent> <Up> 5k
 nnoremap <silent> <Down> 5j
+nnoremap <silent> <Left> 5h
+nnoremap <silent> <Right> 5l
 
 
 " Use tab for trigger completion with characters ahead and navigate.
