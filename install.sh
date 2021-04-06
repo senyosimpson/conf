@@ -112,3 +112,4 @@ fi
 
 ln -sfnv ~/dotfiles/.zsh/aliases ~/.zsh/aliases
 ln -sfnv ~/dotfiles/.zsh/funcs ~/.zsh/funcs
+ln -sfnv ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
