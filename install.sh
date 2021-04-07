@@ -105,11 +105,11 @@ then
     mkdir ~/.zsh
 fi
 
-if [ ! -f ~/.zsh/envars ]
+if [ ! -f ~/.zsh/env ]
 then
-    touch ~/.zsh/envars
+    touch ~/.zsh/env
 fi
 
 ln -sfnv ~/dotfiles/.zsh/aliases ~/.zsh/aliases
-ln -sfnv ~/dotfiles/.zsh/funcs ~/.zsh/funcs
+ln -sfnv ~/dotfiles/.zsh/functions ~/.zsh/functions
 ln -sfnv ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml

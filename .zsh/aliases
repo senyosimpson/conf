@@ -16,11 +16,12 @@ alias frg="pip freeze | rg"
 alias ireq="pip install -r requirements.txt"
 
 # Shortcuts to directories
-alias cas='cd ~/Casette'
-alias proj='cd ~/Projects'
-alias aero='cd ~/Aerobotics'
+BASEDIR="/media/senyo/senYeezus"
+alias cas='cd ${BASEDIR}/Casette'
+alias proj='cd ${BASEDIR}/Projects'
+alias aero='cd ${BASEDIR}/Aero'
 alias dots='cd ~/dotfiles'
-alias oss='cd ~/OSS'
+alias oss='cd ${BASEDIR}/OSS'
 alias mas='cd ~/Masters'
 
 # Aerobotics

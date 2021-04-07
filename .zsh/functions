@@ -21,6 +21,7 @@ create-env() {
     pyenv activate $2
     pip3 install \
       black \
+      boto3 \
       pylint \
       mypy \
       wheel \
