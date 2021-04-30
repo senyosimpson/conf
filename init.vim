@@ -59,7 +59,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " Custom mappings
 inoremap jj <Esc>
 nnoremap 9 $
-nnoremap <silent> <C-f> :Files<CR>
+nnoremap <silent> ff :Files<CR>
+nnoremap <silent> rr :Rg<CR>
 " This unsets the last searched pattern register by hitting return
 nnoremap <silent> <CR> :noh<CR><CR>
 " Go back to normal mode in the terminal
