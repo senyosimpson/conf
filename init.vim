@@ -59,8 +59,11 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " Custom mappings
 inoremap jj <Esc>
 nnoremap 9 $
+" Fuzzy finder and Rg
 nnoremap <silent> ff :Files<CR>
 nnoremap <silent> rr :Rg<CR>
+" Go to previously opened buffer
+nnoremap <silent> tt :e#<CR>
 " This unsets the last searched pattern register by hitting return
 nnoremap <silent> <CR> :noh<CR><CR>
 " Go back to normal mode in the terminal
@@ -117,7 +120,7 @@ let g:netrw_altv=1
 " 2 - open files in a new vertical split
 " 3 - open files in a new tab
 " 4 - open in previous window 
-let g:netrw_browse_split = 3
+let g:netrw_browse_split = 4
 " Percentage of the window size to dedicate to netrw when opened
 " in another tab
 let g:netrw_winsize = 20
