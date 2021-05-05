@@ -43,7 +43,7 @@ compinit
 
 # Pyenv
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$PATH:$PYENV_ROOT/bin"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 

@@ -1,9 +1,9 @@
 # Shortcuts to configs
 alias vimrc='nvim ~/.vimrc'
-alias zshconfig="nvim ~/.zshrc"
-alias zshfuncs="nvim ~/.zsh/functions"
-alias zshalias="nvim ~/.zsh/aliases"
+alias zshrc="nvim ~/.zshrc"
 alias nvimrc="nvim ~/.config/nvim/init.vim"
+alias zshf="nvim ~/.zsh/functions"
+alias zsha="nvim ~/.zsh/aliases"
 alias coc="nvim ~/.config/nvim/coc-settings.json"
 alias crit="nvim ~/.config/alacritty/alacritty.yml"
 
@@ -16,13 +16,14 @@ alias frg="pip freeze | rg"
 alias ireq="pip install -r requirements.txt"
 
 # Shortcuts to directories
-BASEDIR="/media/senyo/senYeezus"
+BASEDIR="/home/senyeezus"
 alias cas='cd ${BASEDIR}/Casette'
 alias proj='cd ${BASEDIR}/Projects'
-alias aero='cd ${BASEDIR}/Aero'
+alias aero='cd ${BASEDIR}/Aerobotics'
 alias dots='cd ~/dotfiles'
 alias oss='cd ${BASEDIR}/OSS'
 alias mas='cd ~/Masters'
+alias ox='cd ~/Oxide'
 
 # Aerobotics
 alias aerojn='cd ~/Aerobotics/aerowork && jupyter lab'
