@@ -50,3 +50,4 @@ eval "$(pyenv virtualenv-init -)"
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"
+eval "$(atuin init zsh)"

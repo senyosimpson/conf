@@ -12,8 +12,12 @@ create-jupyter-kernel() {
 	ipython kernel install --username --name="$1"
 }
 
-actenv() {
-	source ~/.envs/"$1"/bin/activate
+activate() {
+    pyenv activate $1
+}
+
+deactivate() {
+    pyenv deactivate
 }
 
 create-env() {
@@ -33,10 +37,6 @@ create-env() {
       python-dotenv \
       structlog \
       python-json-logger
-}
-
-add-theme() {
-    bash -c "$(wget -qO- https://git.io/vQgMr)"
 }
 
 copy-passwd() {

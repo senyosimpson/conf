@@ -1,5 +1,8 @@
+# Command line tools replacements
+alias cat="bat"
+
 # Shortcuts to configs
-alias vimrc='nvim ~/.vimrc'
+alias vimrc="nvim ~/.vimrc"
 alias zshrc="nvim ~/.zshrc"
 alias nvimrc="nvim ~/.config/nvim/init.vim"
 alias fns="nvim ~/.functions"
@@ -17,16 +20,16 @@ alias ireq="pip install -r requirements.txt"
 
 # Shortcuts to directories
 BASEDIR="/home/senyeezus"
-alias cas='cd ${BASEDIR}/Casette'
-alias proj='cd ${BASEDIR}/Projects'
-alias aero='cd ${BASEDIR}/Aerobotics'
-alias dots='cd ~/dotfiles'
-alias oss='cd ${BASEDIR}/OSS'
-alias mas='cd ~/Masters'
-alias ox='cd ~/Oxide'
+alias cas="cd ${BASEDIR}/Casette"
+alias proj="cd ${BASEDIR}/Projects"
+alias aero="cd ${BASEDIR}/Aerobotics"
+alias dots="cd ~/dotfiles"
+alias oss="cd ${BASEDIR}/OSS"
+alias mas="cd ~/Masters"
+alias ox="cd ~/Oxide"
 
 # Aerobotics
-alias aerojn='cd ~/Aerobotics/aerowork && jupyter lab'
+alias aerojn="cd ~/Aerobotics/aerowork && jupyter lab"
 alias lgn="aeroless auth login --email senyo.simpson@aerobotics.com"
 
 # Postgres
@@ -35,9 +38,10 @@ alias pgstop="sudo service postgresql stop"
 
 # General
 alias rs="source ~/.zshrc"
-alias ignore='gi python,macos,visualstudiocode,vim,c,c++,cmake,pycharm >> .gitignore'
+alias ignore="gi python,macos,visualstudiocode,vim,c,c++,cmake,pycharm >> .gitignore"
 alias o="nvim ."
 alias at="alacritty-themes"
+alias hist="atuin search -i"
 
 # Ripgrep
 alias arg="alias | rg"

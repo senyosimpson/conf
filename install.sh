@@ -113,3 +113,4 @@ fi
 ln -sfnv ~/dotfiles/.aliases ~/.aliases
 ln -sfnv ~/dotfiles/.functions ~/.functions
 ln -sfnv ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
+ln -sfnv ~/dotfiles/atuin.toml ~/.config/atuin/config.toml
