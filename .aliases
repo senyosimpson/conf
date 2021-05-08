@@ -1,5 +1,6 @@
 # Command line tools replacements
 alias cat="bat"
+alias ls="lsd"
 
 # Shortcuts to configs
 alias vimrc="nvim ~/.vimrc"
