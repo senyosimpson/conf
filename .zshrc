@@ -21,21 +21,21 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # Load aliases
-if [[ -f ~/.zsh/aliases ]]
+if [[ -f ~/.aliases ]]
 then
-	. ~/.zsh/aliases
+	. ~/.aliases
 fi
 
 # Load environment variables
-if [[ -f ~/.zsh/env ]]
+if [[ -f ~/.env ]]
 then
-	. ~/.zsh/env
+	. ~/.env
 fi
 
 # Load functions
-if [[ -f ~/.zsh/functions ]]
+if [[ -f ~/.functions ]]
 then
-	. ~/.zsh/functions
+	. ~/.functions
 fi
 
 autoload -Uz compinit

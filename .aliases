@@ -2,8 +2,8 @@
 alias vimrc='nvim ~/.vimrc'
 alias zshrc="nvim ~/.zshrc"
 alias nvimrc="nvim ~/.config/nvim/init.vim"
-alias zshf="nvim ~/.zsh/functions"
-alias zsha="nvim ~/.zsh/aliases"
+alias fns="nvim ~/.functions"
+alias als="nvim ~/.aliases"
 alias coc="nvim ~/.config/nvim/coc-settings.json"
 alias crit="nvim ~/.config/alacritty/alacritty.yml"
 

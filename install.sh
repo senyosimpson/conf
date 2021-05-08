@@ -110,6 +110,6 @@ then
     touch ~/.zsh/env
 fi
 
-ln -sfnv ~/dotfiles/.zsh/aliases ~/.zsh/aliases
-ln -sfnv ~/dotfiles/.zsh/functions ~/.zsh/functions
+ln -sfnv ~/dotfiles/.aliases ~/.aliases
+ln -sfnv ~/dotfiles/.functions ~/.functions
 ln -sfnv ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
