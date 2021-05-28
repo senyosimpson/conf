@@ -16,6 +16,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-vinegar'
 
 call plug#end()
 
@@ -63,7 +64,7 @@ nnoremap 9 $
 nnoremap <silent> ff :Files<CR>
 nnoremap <silent> rr :Rg<CR>
 " Go to previously opened buffer
-nnoremap <silent> tt :e#<CR>
+nnoremap <silent> ,, <C-^>
 " This unsets the last searched pattern register by hitting return
 nnoremap <silent> <CR> :noh<CR><CR>
 " Go back to normal mode in the terminal
@@ -108,22 +109,6 @@ colorscheme sonokai
 let g:sonokai_style = 'andromeda'
 
 " Netrw config
-" This just chooses the symbol used when listing directories
-let g:netrw_liststyle = 3
-" This removes the banner at the top with commands on how to use netrw
-let g:netrw_banner = 0
-" Makes the v key open the window vertically with the new window and cursor
-" to the right
-let g:netrw_altv=1
-" Decides how files are opened
-" 1 - open files in a new horizontal split
-" 2 - open files in a new vertical split
-" 3 - open files in a new tab
-" 4 - open in previous window 
-let g:netrw_browse_split = 4
-" Percentage of the window size to dedicate to netrw when opened
-" in another tab
-let g:netrw_winsize = 20
 
 " Setting up Python for Neovim. This is in order to ensure that the Python
 " used by Neovim always has some standard tools in it such as Black
