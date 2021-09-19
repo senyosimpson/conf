@@ -1,6 +1,7 @@
 # Command line tools replacements
 alias cat="bat"
 alias ls="lsd"
+# alias cd="z"
 
 # Shortcuts to configs
 alias vimrc="nvim ~/.vimrc"
@@ -27,15 +28,16 @@ alias aero="cd ${BASEDIR}/Aerobotics"
 alias dots="cd ~/dotfiles"
 alias oss="cd ${BASEDIR}/OSS"
 alias mas="cd ~/Masters"
-alias ox="cd ~/Oxide"
+alias hu="cd ~/Humane"
+alias yd="cd ~/Yardd"
 
 # Aerobotics
 alias aerojn="cd ~/Aerobotics/aerowork && jupyter lab"
 alias lgn="aeroless auth login --email senyo.simpson@aerobotics.com"
 
 # Postgres
-alias pgstart="sudo service postgresql start"
-alias pgstop="sudo service postgresql stop"
+alias pgstart="sudo systemctl start postgresql@13-main"
+alias pgstop="sudo systemctl stop postgresql@13-main"
 
 # General
 alias rs="source ~/.zshrc"
@@ -43,8 +45,23 @@ alias ignore="gi python,macos,visualstudiocode,vim,c,c++,cmake,pycharm >> .gitig
 alias o="nvim ."
 alias at="alacritty-themes"
 alias hist="atuin search -i"
+alias gg="googler"
+
+# fzf
+alias f="fzf"
 
 # Ripgrep
 alias arg="alias | rg"
 alias lrg="l | rg"
 alias erg="env | rg"
+
+# Terraform
+alias tfw="terraform workspace"
+alias tfws="terraform workspace show"
+alias tfwss="terraform workspace select staging"
+alias tfwsp="terraform workspace select production"
+alias tfwn="terraform workspace new"
+alias tfwl="terraform workspace list"
+alias tfp="terraform plan"
+alias tfa="terraform apply"
+alias tfi="terraform init"
