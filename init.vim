@@ -50,16 +50,24 @@ set mouse=a
 set nobackup
 set writebackup
 set spelllang=en_gb
+set splitbelow
 
 " Auto commands
 autocmd BufReadPre *.py :set foldmethod=indent
+autocmd VimEnter *.json :set shiftwidth=2
+autocmd VimEnter *.tf :set shiftwidth=2
 autocmd InsertLeave * :w
 autocmd VimEnter * :RainbowParentheses
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-" Custom mappings
+" Go to normal mode from insert mode
 inoremap jj <Esc>
+" Go the end of the line
 nnoremap 9 $
+" Open terminal
+nnoremap <C-1> :term<CR>
+" Go back to normal mode in the terminal
+tnoremap <C-e> <C-\><C-n>
 " Fuzzy finder and Rg
 nnoremap <silent> ff :Files<CR>
 nnoremap <silent> rr :Rg<CR>
@@ -67,11 +75,8 @@ nnoremap <silent> rr :Rg<CR>
 nnoremap <silent> ,, <C-^>
 " This unsets the last searched pattern register by hitting return
 nnoremap <silent> <CR> :noh<CR><CR>
-" Go back to normal mode in the terminal
-tnoremap <C-e> <C-\><C-n>
 " Toggle file explorer in normal and insert mode
 nnoremap <C-e> :Lexplore<CR>
-inoremap <C-e> :Lexplore<CR>
 " GoTo code definitions using CoC
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)

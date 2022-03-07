@@ -3,44 +3,12 @@ set-personal-git() {
 	git config --local user.email "simpsonsenyo@gmail.com"
 }
 
-set-work-git() {
+set-fly-git() {
 	git config --local user.name "Senyo Simpson"
-	git config --local user.email "senyo.simpson@aerobotics.com"
+	git config --local user.email "senyo@fly.io"
 }
 
-create-jupyter-kernel() {
-	ipython kernel install --username --name="$1"
-}
-
-activate() {
-    pyenv activate $1
-}
-
-deactivate() {
-    pyenv deactivate
-}
-
-create-env() {
-    pyenv virtualenv $1 $2
-    pyenv activate $2
-    pip3 install \
-      black \
-      boto3 \
-      pylint \
-      mypy \
-      wheel \
-      mkdocs \
-      mkdocs-material \
-      pygments \
-      jupyterlab \
-      ipython \
-      python-dotenv \
-      structlog \
-      python-json-logger
-}
-
-copy-passwd() {
-    op get item "$1" --fields username,password | \
-    jq '.password' | sed 's/"//g' | \
-    xclip -selection clip
+set-luma-git() {
+	git config --local user.name "Senyo Simpson"
+	git config --local user.email "senyo@tryluma.com"
 }

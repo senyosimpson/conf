@@ -1,9 +1,9 @@
-# Command line tools replacements
+# command line tools replacements
 alias cat="bat"
 alias ls="lsd"
 # alias cd="z"
 
-# Shortcuts to configs
+# shortcuts to configs
 alias vimrc="nvim ~/.vimrc"
 alias zshrc="nvim ~/.zshrc"
 alias nvimrc="nvim ~/.config/nvim/init.vim"
@@ -12,7 +12,7 @@ alias als="nvim ~/.aliases"
 alias coc="nvim ~/.config/nvim/coc-settings.json"
 alias crit="nvim ~/.config/alacritty/alacritty.yml"
 
-# Python related
+# python related
 alias py="python"
 alias ipy="ipython3"
 alias lsenvs="pyenv virtualenvs"
@@ -22,24 +22,15 @@ alias ireq="pip install -r requirements.txt"
 
 # Shortcuts to directories
 BASEDIR="/home/senyeezus"
-alias cas="cd ${BASEDIR}/Casette"
 alias proj="cd ${BASEDIR}/Projects"
-alias aero="cd ${BASEDIR}/Aerobotics"
 alias dots="cd ~/dotfiles"
-alias oss="cd ${BASEDIR}/OSS"
 alias mas="cd ~/Masters"
-alias hu="cd ~/Humane"
-alias yd="cd ~/Yardd"
 
-# Aerobotics
-alias aerojn="cd ~/Aerobotics/aerowork && jupyter lab"
-alias lgn="aeroless auth login --email senyo.simpson@aerobotics.com"
-
-# Postgres
+# postgres
 alias pgstart="sudo systemctl start postgresql@13-main"
 alias pgstop="sudo systemctl stop postgresql@13-main"
 
-# General
+# general
 alias rs="source ~/.zshrc"
 alias ignore="gi python,macos,visualstudiocode,vim,c,c++,cmake,pycharm >> .gitignore"
 alias o="nvim ."
@@ -50,12 +41,12 @@ alias gg="googler"
 # fzf
 alias f="fzf"
 
-# Ripgrep
+# ripgrep
 alias arg="alias | rg"
 alias lrg="l | rg"
 alias erg="env | rg"
 
-# Terraform
+# terraform
 alias tfw="terraform workspace"
 alias tfws="terraform workspace show"
 alias tfwss="terraform workspace select staging"
@@ -65,3 +56,13 @@ alias tfwl="terraform workspace list"
 alias tfp="terraform plan"
 alias tfa="terraform apply"
 alias tfi="terraform init"
+
+# tcpdump
+alias td="tcpdump"
+
+# golang
+alias gog=go1.18beta2
+
+# fly
+alias flyy="cd ${BASEDIR}/Fly"
+alias pxy="cd ${BASEDIR}/Fly/fly-proxy"
